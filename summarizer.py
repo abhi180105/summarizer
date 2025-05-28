@@ -3,7 +3,7 @@ import requests
 
 def summarize_with_api(text, model_name="facebook/bart-large-cnn", max_length=150):
     API_URL = f"https://api-inference.huggingface.co/models/{model_name}"
-    headers = {"Authorization": "Bearer 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"}
+    headers = {"Authorization": "Bearer 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"}
     
     payload = {"inputs": text, "parameters": {"max_length": max_length}}
     response = requests.post(API_URL, headers=headers, json=payload)
